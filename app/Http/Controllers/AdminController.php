@@ -94,7 +94,7 @@ class AdminController extends Controller
 
     public function Order(){
         $order = Order::all();
-        return view('admin.Order', compact('Order'));
+        return view('admin.order', compact('order'));
     }  
     public function delivered($id){
         $order = order::find($id);
